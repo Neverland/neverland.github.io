@@ -1,3 +1,3 @@
-# neverland.github.io
+# Neverland
 
 ## Hello world!
