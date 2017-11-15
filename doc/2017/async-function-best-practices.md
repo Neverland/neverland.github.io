@@ -179,7 +179,7 @@ Edit1：如Keith Smith所指出的那样，上面的例子有一个严重的问�
 ```
 
 
-但是，如果使用try-catch块，会丢失重要的异常如系统错误，那么就要重新抛出异常。 要了解更多关于什么时候应该重新投掷的信息，我强烈建议阅读Eran的[Learning to Throw Again.](https://medium.com/@eranhammer/learning-to-throw-again-79b498504d28)。
+但是如果使用try-catch会丢失重要的异常如系统错误，那么就要重新抛出异常。 要了解更多关于什么时候应该重新投掷的信息，我强烈建议阅读Eran的[Learning to Throw Again.](https://medium.com/@eranhammer/learning-to-throw-again-79b498504d28)。
 
 ### 复杂的控制流程
 
