@@ -8,6 +8,7 @@
 
 `await`关键字可以用来等待`Promise` 进入 `resolved`并有完成返回值。如果传给`await`的值不是`Promise`实例，它会被转为 `Promise`的 `resolved` 流程。 
 
+
 ```ecmascript 6
 
 const rp = require('request-promise');
@@ -29,6 +30,7 @@ main()
   .catch(console.error);
 
 ```
+
 
 ## 迁移到`async`函数
 
@@ -52,6 +54,7 @@ main()
   
 ```
 
+
 ## `async`函数最佳实践
 
 ### 在`express`中使用`async`函数
@@ -59,6 +62,7 @@ main()
 As express supports Promises out of the box, using async functions with express is as simple as:
 
 `express` 是支持 `Promise`的，所以使用`async`函数可以把代码简化为：
+
 
 ```ecmascript 6
 
@@ -77,6 +81,7 @@ app.get('/', async (request, response) => {
 app.listen(process.env.PORT);
 
 ```
+
 
 Edit1：如Keith Smith所指出的那样，上面的例子有一个严重的问题 - 如果`Promise`进入`rejected`，express路由处理程序就会hang住，因为那里没有错误处理。
 
@@ -103,6 +108,8 @@ app.get('/', awaitHandlerFactory(async (request, response) => {
 }));
 
 ```
+
+
 ### 并行
 
 假设你正在做类似的事情，当一个操作需要两个输入，一个来自数据库，另一个来自外部服务：
@@ -118,6 +125,7 @@ async function main () {
 
 ```
 
+
 在这个case中，将会发生以下情况：
 
  - 你的代码将首先获得用户资源，
@@ -125,6 +133,8 @@ async function main () {
  - 并最终进行购买。
 
 正如所见，你可以同时做前两个操作，因为它们之间没有依赖关系。 为此应该使用 `Promise.all` 方法：
+
+
 
 ```ecmascript 6
 
@@ -139,11 +149,14 @@ async function main () {
 
 ```
 
+
 在某些情况下，您只需要最快`resolving`得到`Promise`的结果 - 在这种情况时可以使用`Promise.race`方法。
 
 ### 错误处理
 
 参考下面的代码
+
+
 
 ```ecmascript 6
 
@@ -158,7 +171,11 @@ main()
 
 ```
 
+
+
 如果运行这段代码，你会在terminal上看到类似的消息：
+
+
 
 ```ecmascript 6
 
@@ -167,7 +184,10 @@ main()
 
 ```
 
+
 在新版的Node.js中，如果Promise拒绝不会被处理，那么会导致整个Node.js进程。 因此，在必要时应该使用try-catch块：
+
+
 
 ```ecmascript 6
 
@@ -190,6 +210,7 @@ main()
   .catch(console.error)；
 
 ```
+
 
 但是，如果使用try-catch块，会丢失重要的异常如系统错误，那么就要重新抛出异常。 要了解更多关于什么时候应该重新投掷的信息，我强烈建议阅读Eran的[Learning to Throw Again.](https://medium.com/@eranhammer/learning-to-throw-again-79b498504d28)。
 
@@ -227,7 +248,7 @@ main()
   .then(console.log)
   .catch(console.error);
 
-
 ```
+
 
 [原文地址](https://nemethgergely.com/async-function-best-practices/)
