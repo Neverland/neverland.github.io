@@ -155,7 +155,7 @@ Edit1：如Keith Smith所指出的那样，上面的例子有一个严重的问�
 ```
 
 
-在新版的Node.js中，如果Promise拒绝不会被处理，那么会导致整个Node.js进程。 因此，在必要时应该使用try-catch块：
+在新版的Node.js中，如果Promise拒绝不会被处理，那么会导致整个Node.js进程崩溃。 因此在必要时应该使用try-catch语句：
 
 
 ```javascript
