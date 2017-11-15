@@ -10,7 +10,6 @@
 
 
 ```ecmascript 6
-
 const rp = require('request-promise');
 
 async function main () {
@@ -28,16 +27,13 @@ async function main () {
 main()
   .then(console.log)
   .catch(console.error);
-
 ```
-
 
 ## 迁移到`async`函数
 
 如果你的Node.js应用已经使用了`Promise`, 你只需要使用 `await`替代Promise链式调用。如果你的代码是基于 `callback`, 迁移到 `async`函数需要逐步修改现有代码。可以在新到功能中使用新的技术，如果必须保留旧有功能则可以使用 `Promise` 进行简单的包装。为此你可以使用内置的`util.promisify`（译者注：Node.js 8.0+） 方法！
 
 ```ecmascript 6
-
 const util = require('util');
 const {readFile} = require('fs');
 const readFileAsync = util.promisify(readFile);
@@ -51,9 +47,7 @@ async function main () {
 main()
   .then(console.log)
   .catch(console.error);
-  
 ```
-
 
 ## `async`函数最佳实践
 
@@ -63,9 +57,7 @@ As express supports Promises out of the box, using async functions with express 
 
 `express` 是支持 `Promise`的，所以使用`async`函数可以把代码简化为：
 
-
 ```ecmascript 6
-
 const express = require('express');
 const app = express();
 
@@ -79,7 +71,6 @@ app.get('/', async (request, response) => {
 });
 
 app.listen(process.env.PORT);
-
 ```
 
 
@@ -88,7 +79,6 @@ Edit1：如Keith Smith所指出的那样，上面的例子有一个严重的问�
 要解决这个问题，你应该把你的异步处理程序封装在一个处理错误的函数中：
 
 ```ecmascript 6
-
 const awaitHandlerFactory = middleware => {
 
   return async (req, res, next) => {
@@ -106,25 +96,20 @@ app.get('/', awaitHandlerFactory(async (request, response) => {
 
   response.send(result);
 }));
-
 ```
-
 
 ### 并行
 
 假设你正在做类似的事情，当一个操作需要两个输入，一个来自数据库，另一个来自外部服务：
 
 ```ecmascript 6
-
 async function main () {
   const user = await Users.fetch(userId);
   const product = await Products.fetch(productId);
 
   await makePurchase(user, product);
 }
-
 ```
-
 
 在这个case中，将会发生以下情况：
 
@@ -134,10 +119,7 @@ async function main () {
 
 正如所见，你可以同时做前两个操作，因为它们之间没有依赖关系。 为此应该使用 `Promise.all` 方法：
 
-
-
 ```ecmascript 6
-
 async function main () {
   const [user, product] = await Promise.all([
     Users.fetch(userId),
@@ -146,9 +128,7 @@ async function main () {
 
   await makePurchase(user, product);
 }
-
 ```
-
 
 在某些情况下，您只需要最快`resolving`得到`Promise`的结果 - 在这种情况时可以使用`Promise.race`方法。
 
@@ -156,10 +136,7 @@ async function main () {
 
 参考下面的代码
 
-
-
 ```ecmascript 6
-
 async function main () {
   await new Promise((resolve, reject) => {
     reject(new Error('💥'));
@@ -168,29 +145,20 @@ async function main () {
 
 main()
   .then(console.log);
-
 ```
-
-
 
 如果运行这段代码，你会在terminal上看到类似的消息：
 
-
-
 ```ecmascript 6
-
 (node:69738) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 2): Error: 💥
 (node:69738) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
-
 ```
 
 
 在新版的Node.js中，如果Promise拒绝不会被处理，那么会导致整个Node.js进程。 因此，在必要时应该使用try-catch块：
 
 
-
 ```ecmascript 6
-
 const util = require('util');
 
 async function main () {
@@ -208,7 +176,6 @@ async function main () {
 main()
   .then(console.log)
   .catch(console.error)；
-
 ```
 
 
@@ -227,7 +194,6 @@ Node.js的第一个异步控制流库是由 `Caolan McMahon` 编写的一[async]
 
 
 ```ecmascript 6
-
 const util = require('util');
 const async = require('async');
 const numbers = [
@@ -247,8 +213,6 @@ async function main () {
 main()
   .then(console.log)
   .catch(console.error);
-
 ```
-
 
 [原文地址](https://nemethgergely.com/async-function-best-practices/)
