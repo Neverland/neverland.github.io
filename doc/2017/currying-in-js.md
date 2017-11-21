@@ -176,3 +176,6 @@ foo（）支持多种方式调用。
  - [Currying versus partial application (with JavaScript code)](http://2ality.com/2011/09/currying-vs-part-eval.html)
  - [Arrow functions vs. bind()](http://2ality.com/2016/02/arrow-functions-vs-bind.html)
  - [Uncurrying “this” in JavaScript](http://2ality.com/2011/11/uncurrying-this.html)
+
+
+[原文地址](http://2ality.com/2017/11/currying-in-js.html)
