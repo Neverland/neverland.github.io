@@ -4,7 +4,7 @@
 
 ## Reduce 定义 & 语法
 
- `reduce()`方法将函数应用于数组中的每个元素，以将数组缩小为一个值。
+ `reduce()`方法将函数应用于数组中的每个项，以将数组缩小为一个值。
 
  例子：
 
@@ -18,13 +18,13 @@ let result = arr.reduce(callback, initValue);
 
  - result — 返回的最终结构.
  - arr — 要使用reduce函数的数组.
- - callback — 这个函数会被尝试用在当前数组的每一个元素上。如果函数的返回值是true就会使用当前元素，反之忽略当前元素.
- - initValue — 可选的初始值. 如果没有设置, 数组的第一个元素会被作为默认值。
+ - callback — 这个函数会被尝试用在当前数组的每一项上。如果函数的返回值是true就会使用当前数组项，反之忽略当前数组项.
+ - initValue — 可选的初始值. 如果没有设置, 数组的第一项会被作为默认值。
 
  callback函数有四个参数，通过map(), filter()方法你一定已经熟悉了这些参数，新的参数是累加器（accumulator）。
  
  - accumulator — 累加器会累加callback的返回值。
- - val — 被处理的当前元素。
+ - val — 被处理的当前数组项。
  - index — 当前索引。
  - arr — 调用reduce的数组。
 
