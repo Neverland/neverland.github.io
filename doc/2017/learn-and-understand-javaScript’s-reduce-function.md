@@ -73,7 +73,7 @@ sum = 10
 
 ```
 
- 真帮！
+ 真棒！
 
 ## 指定初始值（Initial Value）
 
@@ -88,7 +88,7 @@ let sum = arr.reduce((acc, val) => {
 ```
  如你所见例子相同，变化只是给callback添加了第二个参数。我们以100为初始值，当运行这个函数时，得到的值是110。
  
- ## Reduce & ES6
+## Reduce & ES6
  
  使用箭头函数可以简化代码。箭头函数有返回值时，可以省略括号和return关键字。
  
@@ -98,7 +98,7 @@ let sum = arr.reduce((acc, val) => {
 
  很酷吧？只使用一行代码，我们可以把100添加到数组的和中！在for循环上我们已经浪费了很多代码。
  
- ## 挑战
+## 挑战
  
  给出以下数据:
   
@@ -127,15 +127,15 @@ let data = [
 
  使用reduce()方法，如何获得中国以外国家的人口总和？思考答案再滚到下面看解决方案。
  
- ***
+\***
  
- *****
+\*****
  
- *******
+\*******
  
- *****
+\*****
  
- ***
+\***
 
  我们可以这样做：
 
@@ -152,6 +152,6 @@ let sum = data.reduce((acc, val) => {
  
  [原文](https://codeburst.io/learn-understand-javascripts-reduce-function-b2b0406efbdc).
  
- ## 思考（译者添加）
+## 思考（译者添加）
  
  如何实现一个[].reduce()的es5 shim。
