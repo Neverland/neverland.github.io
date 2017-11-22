@@ -93,8 +93,12 @@ let sum = arr.reduce((acc, val) => {
  使用箭头函数可以简化代码。箭头函数有返回值时，可以省略括号和return关键字。
  
  上面的代码等价于：
- 
+
+```javascript
+
  let sum = arr.reduce((acc, val) => acc + val, 100);
+
+```
 
  很酷吧？只使用一行代码，我们可以把100添加到数组的和中！在for循环上我们已经浪费了很多代码。
  
