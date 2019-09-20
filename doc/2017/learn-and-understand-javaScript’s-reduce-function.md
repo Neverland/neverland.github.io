@@ -159,3 +159,8 @@ let sum = data.reduce((acc, val) => {
 ## 思考（译者添加）
  
  如何实现一个[].reduce()的es5 shim。
+
+
+---
+- 我的blog: [neverland.github.io](https://neverland.github.io/)
+- 我的email [enix@foxmail.com](enix@foxmail.com)

@@ -216,3 +216,7 @@ Node.js的第一个异步控制流库是由 `Caolan McMahon` 编写的一[async]
 ```
 
 [原文地址](https://nemethgergely.com/async-function-best-practices/)
+
+---
+- 我的blog: [neverland.github.io](https://neverland.github.io/)
+- 我的email [enix@foxmail.com](enix@foxmail.com)

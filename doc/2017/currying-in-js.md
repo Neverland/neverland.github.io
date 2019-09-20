@@ -179,3 +179,8 @@ foo（）支持多种方式调用。
 
 
 [原文地址](http://2ality.com/2017/11/currying-in-js.html)
+
+
+---
+- 我的blog: [neverland.github.io](https://neverland.github.io/)
+- 我的email [enix@foxmail.com](enix@foxmail.com)
