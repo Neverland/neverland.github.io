@@ -82,17 +82,13 @@ function getShapeGeometryFromPoints(path) {
 road.forEach(edge => {
     let path = [];
 
-    edge.forEach(({curve, type}) => {
-        let point = curve.segment[0].lineSegment.point;
-
-        this.drawAdge(point);
-
+    edge.forEach(({point, type}) => {
         if ('RIGHT_BOUNDARY' === type) {
             point = point.reverse();
             point.push(path[0]);
         }
 
-        path = path.concat(point);
+        path = [...path, point];
     });
 
     if (!path.length) {
