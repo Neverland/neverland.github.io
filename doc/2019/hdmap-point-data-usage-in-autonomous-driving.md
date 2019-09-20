@@ -107,4 +107,3 @@ road.forEach(edge => {
 那么通过以上5步操作我们可以得到一个完整的路面，实际效果如下。
 
 ![road](./image/1/road.png)
-
