@@ -14,6 +14,7 @@
 ### [Threejs in autonomous driving -（7）移动geometry的合并](https://neverland.github.io/doc/2019/Threejs-in-autonomous-driving(7))
 ### [Threejs in autonomous driving -（8）世界坐标转屏幕坐标](https://neverland.github.io/doc/2019/Threejs-in-autonomous-driving(8))
 ### [Threejs in autonomous driving -（9）显示高清化](https://neverland.github.io/doc/2019/Threejs-in-autonomous-driving(9))
+### [Threejs in autonomous driving -（10）降低fps](https://neverland.github.io/doc/2019/Threejs-in-autonomous-driving(10))
 
 ## 2017
 ### [Node.js Async 函数最佳实践](https://neverland.github.io/doc/2017/async-function-best-practices)
