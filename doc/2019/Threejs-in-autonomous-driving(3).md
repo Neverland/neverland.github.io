@@ -32,3 +32,7 @@ junction.forEach(({point}) => {
 ## 验证
 
 直观上可以看到cpu和memory使用减少了，怎样可以去量化呢。Threejs的renderer示例提供了一个可以接口，renderer.info属性可以看到render的实时情况。使用renderer.info.calls可以对比一下前后的drawacall情况。
+
+---
+- 我的blog: [neverland.github.io](https://neverland.github.io/)
+- 我的email [enix@foxmail.com](enix@foxmail.com)
