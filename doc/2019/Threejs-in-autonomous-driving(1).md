@@ -109,3 +109,7 @@ road.forEach(edge => {
 那么通过以上5步操作我们可以得到一个完整的路面，实际效果如下。
 
 ![road](./image/1/road.png)
+
+---
+    我的blog: [neverland.github.io](https://neverland.github.io/)
+    我的email [enix@foxmail.com](enix@foxmail.com)
