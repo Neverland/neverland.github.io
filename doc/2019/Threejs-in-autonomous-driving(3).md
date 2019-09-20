@@ -9,11 +9,11 @@
     任何对WebGL API的调用都会带来开销。每个调用都会要求CPU进行额外的处理和数据复制，这回占用时间并要求CPU做一些额外工作。通常，如果GPU接收到大批可并行处理的数据，运行效率会提高很多。
 
 这里感谢一篇文章，详细的介绍了`merge geometry`。里面的API虽然经过版本迭代有所变化，但是效果依然。通过这种技术成功的使我们可以一次展示成千上万个geometry。
-(performance-merging-geometry)[http://learningthreejs.com/blog/2011/10/05/performance-merging-geometry/]
+[performance-merging-geometry](http://learningthreejs.com/blog/2011/10/05/performance-merging-geometry/)
 
 ## 实现
 
-实现非常的简单，见一下案例代码。官方API (Geometry.merge)[https://threejs.org/docs/index.html#api/zh/core/Geometry.merge]
+实现非常的简单，见一下案例代码。官方API [Geometry.merge](https://threejs.org/docs/index.html#api/zh/core/Geometry.merge)
 
 ```javascript
 
