@@ -60,11 +60,11 @@ let lineSegment = new THREE.LineSegments(geometry, material);
 
 #### 数据加工
 
-1.先把leftBoundray数据push到一个数组。
-2.把rightBoundray数据翻转push
-3.这是如果绘制会发现只能形成一个`凹`型线框并不能形成完整面。
-4.我们去第一个点push进去这样绘制就可以形成一个面了。
-5.用路径绘制一个二维平面可以使用[Shape](https://threejs.org/docs/index.html#api/zh/extras/core/Shape)
+    1.先把leftBoundray数据push到一个数组。
+    2.把rightBoundray数据翻转push
+    3.这是如果绘制会发现只能形成一个`凹`型线框并不能形成完整面。
+    4.我们去第一个点push进去这样绘制就可以形成一个面了。
+    5.用路径绘制一个二维平面可以使用[Shape](https://threejs.org/docs/index.html#api/zh/extras/core/Shape)
 
 示例代码如下：
 
