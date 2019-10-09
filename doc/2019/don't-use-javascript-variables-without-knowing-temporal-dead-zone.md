@@ -316,3 +316,11 @@ TDZ是一个重要的概念，会影响`const`、`let`和`class`语句的可用�
 相反的可以在声明前使用`var`定义的变量，这是一个旧的机制。我们应该避免它。
 
 在我看来，好的编码习惯来达到语言规范TDZ是一个好东西。
+
+[原文地址]([https://dmitripavlutin.com/javascript-variables-and-temporal-dead-zone/](https://dmitripavlutin.com/javascript-variables-and-temporal-dead-zone/)
+)
+
+---
+- 我的blog: [neverland.github.io](https://neverland.github.io/)
+- 我的email [enix@foxmail.com](enix@foxmail.com)
+
