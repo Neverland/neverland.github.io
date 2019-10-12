@@ -25,6 +25,7 @@ import adcPng from 'assets/model/car.png';
 
 let texture = new THREE.TextureLoader()
     .load(adcPng);
+
 texture.center.set(0, 0);
 texture.needsUpdate = true;
 
