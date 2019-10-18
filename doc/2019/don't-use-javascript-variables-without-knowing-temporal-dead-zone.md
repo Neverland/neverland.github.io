@@ -150,7 +150,7 @@ myNissan.color; // => 'red'
 ```
 
 ### 2.4 constructor() 中的super()
-如果挤成了父类，在调用构造器中的super()前
+如果继承了父类，在调用构造器中的super()前
 If you extend a parent class, before calling super() inside the constructor, this 绑定为于TDZ中:
 
 ``` javascript
