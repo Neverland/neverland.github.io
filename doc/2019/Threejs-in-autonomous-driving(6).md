@@ -2,8 +2,7 @@
 
 > 绘制各种几何体是webgl的强项，相反各种异性几何体就非常麻烦。比如圆角矩形来说在webgl中绘制就相对比较麻烦。在css中给矩形加上border-radius就可以轻易实现。在webgl中就非常麻烦了。
 
-![a5af4149448fa01a17ba1d7fa09f6439026a4469.jpg](/img/bVby91A)
-
+![a5af4149448fa01a17ba1d7fa09f6439026a4469.jpg](https://image-static.segmentfault.com/385/717/3857177158-5da97bafa5c7d_articlex)
 
 ### 思路
 
