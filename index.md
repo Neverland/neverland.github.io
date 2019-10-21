@@ -3,6 +3,8 @@
 ## 2019
 
 ### [javascript中的暂性死区](https://neverland.github.io/doc/2019/don't-use-javascript-variables-without-knowing-temporal-dead-zone)
+### [强大的JSON.STRINGIFY可选参数](https://neverland.github.io/doc/2019/til-the-power-of-json-stringify-replacer-parameter)
+
 ### [Threejs in autonomous driving -（1）高精度地图数据使用](https://neverland.github.io/doc/2019/Threejs-in-autonomous-driving(1))
 ### [Threejs in autonomous driving -（2）模型精简](https://neverland.github.io/doc/2019/Threejs-in-autonomous-driving(2))
 ### [Threejs in autonomous driving -（3）merge geometry](https://neverland.github.io/doc/2019/Threejs-in-autonomous-driving(3))
