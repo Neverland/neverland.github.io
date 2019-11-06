@@ -2,6 +2,8 @@
 
 ## 2019
 
+### [构建Vue大型应用的10个最佳实践](https://neverland.github.io/doc/2019/10-good-practices-building-maintaining-large-vuejs-projects)
+
 ### [javascript中的暂性死区](https://neverland.github.io/doc/2019/don't-use-javascript-variables-without-knowing-temporal-dead-zone)
 ### [强大的JSON.STRINGIFY可选参数](https://neverland.github.io/doc/2019/til-the-power-of-json-stringify-replacer-parameter)
 
