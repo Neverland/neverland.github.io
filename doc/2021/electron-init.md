@@ -19,15 +19,15 @@ npm i electron
 npm i cnpm -g
 cnpm i electron
 ```
-![image.png](./imag1/1.png)
-![image.png](./imag1/2.png)
+![image.png](./img1/1.png)
+![image.png](./img1/2.png)
 
 运行 electron
 ```
 electron
 ```
-![image.png](./imag1/3.png)
-![image.png](./imag1/4.png)
+![image.png](./img1/3.png)
+![image.png](./img1/4.png)
 
 **看到以上画面即表示成功！！！** 使用方案2可以100%保证成功，已验证！
 
@@ -58,7 +58,7 @@ npx electron-forge init
 
 **如果安装时间过长，一般来说是在本项目中安装`eletron`卡住了，此时可以强行推出，运行**`npm run start`
     
-![image.png](./imag1/5.png)
+![image.png](./img1/5.png)
 如果是这个错误，执行
 
 ```
@@ -67,15 +67,15 @@ npm run start
 ```
 
 成功后`electron`会自动启动项目，看到这个界面即表示`electron`新项目初始化成功。
-![image.png](./imag1/6.png)
+![image.png](./img1/6.png)
 
 
 a. src/main.js 是`main`线程的入口文件。
 
 b. src/main.js 中的index.html 是`renderer`线程的入口文件。
 
-![image.png](./imag1/7.png)
+![image.png](./img1/7.png)
 项目的目录结构如下
-![image.png](./imag1/8.png)
+![image.png](./img1/8.png)
 
 
