@@ -77,7 +77,9 @@ a. src/main.js 是`main`线程的入口文件。
 b. src/main.js 中的index.html 是`renderer`线程的入口文件。
 
 ![image.png](./img1/7.png)
+
 项目的目录结构如下
+
 ![image.png](./img1/8.png)
 
 

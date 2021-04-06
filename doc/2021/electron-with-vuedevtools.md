@@ -9,6 +9,7 @@
 ## 本地编译vue-devtools
 
 1.github传送门[vue-devtools](https://github.com/vuejs/vue-devtools)
+
 2.![image.png](./img3/1.png)
 
 * 注意默认dev分之，**需要切到`master`分之**
@@ -18,7 +19,7 @@
 ![image.png](./img3/2.png)
 我们需要的是
 
-**/vue-devtools/shells/chrome **
+** /vue-devtools/shells/chrome **
 
 把这个文件加考到我们前面几章搭建好的`electron`项目中的自建devtools目录中
 ![image.png](./img3/3.png)

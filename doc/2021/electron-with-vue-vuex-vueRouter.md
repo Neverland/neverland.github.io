@@ -22,8 +22,8 @@
 我们知道`electron` 分为 `main`和`renderer`两个线程，我们在src中创建两个目录来存放他们。
 
 src
-｜——main
-｜——renderer
+    ｜——main
+    ｜——renderer
 
 * 原来的src/inder.js 拖入到main目录
 * vue项目中的src全部拖入renderer目录
