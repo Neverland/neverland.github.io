@@ -1,3 +1,5 @@
+# Electron开发-使用vue-devtools
+
 > 使用electron开发是很难不用到electron的模块，这样我们就没法在浏览器中来实时预览效果了。在electron中想要观察vue的状态怎么办？
 
 # 在elctron项目中集成vue-devtools工具

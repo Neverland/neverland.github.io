@@ -1,3 +1,5 @@
+# Electron开发-electron+vue全家桶
+
 > 上一个篇章中讲了如何搭建一个electron项目，可以看到虽然我们成功的搭建了一个electron项目，但是离一个产品还很远。在这一篇章中我们将结合已有的vue项目来实现一个真实的electron商业应用。
 
 # electron + Vue + Vuex + VueRouter
