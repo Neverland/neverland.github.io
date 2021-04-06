@@ -19,7 +19,7 @@ npm i electron
 npm i cnpm -g
 cnpm i electron
 ```
-![image.png](https://segmentfault.com/a/img/bVcQ4hz)
+![image.png](https://image-static.segmentfault.com/153/555/153555781-606bfebb23369_fix732)
 ![image.png](https://segmentfault.com/a/img/bVcQ4hB)
 
 运行 electron
