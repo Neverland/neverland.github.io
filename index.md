@@ -1,5 +1,8 @@
 # Neverland
 
+## 2022
+
+### [如何保证离开页面时成功发送请求](https://neverland.github.io/doc/2022/Reliably-Send-an-HTTP-Request-as-a-User-Leaves-a-Page)
 ## 2021
 
 ### [Electron开发-使用vue-devtools](https://neverland.github.io/doc/2021/electron-with-vuedevtools)
